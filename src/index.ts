@@ -1,3 +1,5 @@
+var helPlo = true;
+
 function greetName(name = "anonymous") {
 	if (name) {
 		console.log(name);

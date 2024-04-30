@@ -12,16 +12,17 @@ module.exports = {
 			parser: "@vue-eslint/parser",
 		},
 		{
-			files: "**/*.test.*",
+			files: "**/*.ts",
 			rules: {
 				"@typescript-eslint/no-unsafe-call": "off",
+				//"@typescript-eslint/no-unused-vars": "off",
 			},
 		},
 	],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		tsconfigRootDir: __dirname,
-		project: ["./tsconfig.json"],
+		project: ["./tsconfig.json", "./src/index.ts"],
 	},
 	plugins: ["@typescript-eslint"],
 	root: true,
