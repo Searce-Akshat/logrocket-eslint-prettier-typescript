@@ -1,4 +1,4 @@
-var helPlo = true;
+var helPlo = true; //
 
 function greetName(name = "anonymous") {
 	if (name) {
